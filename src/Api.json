@@ -1,0 +1,32 @@
+[
+    {
+        "menuImage" : "https://src.hidoc.co.kr/image/lib/2020/11/9/1604911318873_0.jpg",
+        "title" : "마르게리타 피자",
+        "price" : "16000",
+        "id" : "0"
+    },
+    {
+        "menuImage" : "https://cdn.dominos.co.kr/admin/upload/goods/20200311_M9Q50gtd.jpg",
+        "title" : "포테이토 피자",
+        "price" : "13000",
+        "id" : "1"
+    },
+    {
+        "menuImage" : "https://cdn.dominos.co.kr/admin/upload/goods/20220830_c3Lh4i3H.jpg",
+        "title" : "스테이크 피자",
+        "price" : "12000",
+        "id" : "2"
+    },
+    {
+        "menuImage" : "https://cdn.dominos.co.kr/admin/upload/goods/20220607_tBbZjE5M.jpg",
+        "title" : "씨푸드 피자",
+        "price" : "17000",
+        "id" : "3"
+    },
+    {
+        "menuImage" : "https://cdn.dominos.co.kr/admin/upload/goods/20200508_780B32i8.jpg",
+        "title" : "쉬림프 피자",
+        "price" : "15000",
+        "id" : "4"
+    }
+]
