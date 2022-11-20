@@ -36,7 +36,7 @@ function Pay({cartList}){
         window.scrollTo(0, 0);
     }, [])
     return(
-        <div class = "main-container">
+        <div className = "main-container">
             <div id = "pay-top-container">
                 <Link to = {`/pay`}>
                 <img src = {Image.backCart} id = "backCartImage"/>

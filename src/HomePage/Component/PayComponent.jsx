@@ -64,7 +64,7 @@ function Pay({cartList}){
         window.scrollTo(0, 0);
       }, []);
     return(
-        <div class = "main-container">
+        <div className = "main-container">
             <div id = "pay-top-container">
                 <Link to = {`/`}>
                 <img src = {Image.backCart} id = "backCartImage"/>
@@ -75,7 +75,7 @@ function Pay({cartList}){
                 </Link>
             </div>
             {cartList.map((list, index)=>{
-                return <div key = {index} class = "pay-list-container">
+                return <div key = {index} className = "pay-list-container">
                     <img src = {list.image} id = "pay-menu-image"/>
                     <div id = "payContentList">
                     <div id = "payMenuTitleContainer">
@@ -87,9 +87,9 @@ function Pay({cartList}){
                     <div id = "payMenuPrice">가격 : {list.price}</div>
                     <div id = "payQuantityContainer">
                     <div id = "payQuantityTextTitle">수량 :</div>
-                    <button class = "payMinus" onClick = {() => (minus(index))}>-</button>
+                    <button className = "payMinus" onClick = {() => (minus(index))}>-</button>
                     <div id = "payQuantityText">{quantity[index]}</div>
-                    <button class = "payPlus" onClick = {() => (plus(index))}>+</button>
+                    <button className = "payPlus" onClick = {() => (plus(index))}>+</button>
                     </div>
                         <div id = "payOrderPrice">주문금액 : {list.totalPrice}</div>
                     </div>
@@ -100,9 +100,9 @@ function Pay({cartList}){
                     <div id = "finalPriceTextA">{finalPrice}원</div>
                 </div>
                 <DropdownButton id="dropdown-basic-button" title={payText}>
-                <div onClick = {() => (changePayText('현장결제'))} class = "payWay">현장결제</div>
-                <div onClick = {() => (changePayText('네이버페이'))} class = "payWay">네이버페이</div>
-                <div onClick = {() => (changePayText('카카오페이'))} class = "payWay">카카오페이</div>
+                <div onClick = {() => (changePayText('현장결제'))} className = "payWay">현장결제</div>
+                <div onClick = {() => (changePayText('네이버페이'))} className = "payWay">네이버페이</div>
+                <div onClick = {() => (changePayText('카카오페이'))} className = "payWay">카카오페이</div>
                 </DropdownButton>
 
                 <Link to = {`/finish`}>

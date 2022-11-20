@@ -4,7 +4,7 @@ import "./HomePage.css"
 
 const HomePage = () =>{
     return(
-        <div class = "main-container">
+        <div className = "main-container">
             <HomePageComponent />
         </div>
     );

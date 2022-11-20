@@ -56,7 +56,7 @@ const Cart = () =>{
     }
 
     return(
-        <div class = "main-container">
+        <div className = "main-container">
             <div id = "menuContainer">
                 <img src = {Api[params.id].menuImage} id = "cartImage"/>
 
@@ -77,9 +77,9 @@ const Cart = () =>{
                     <div id = "priceContainer">
                         <div id = "price">가격 : {Api[params.id].price}원</div>
                         <div id = "quantity">수량 :&nbsp;
-                        <button class = "plusMinus" onClick = {minus}>-</button>
+                        <button className = "plusMinus" onClick = {minus}>-</button>
                         <div id = "quantityText">{quantity}</div>
-                        <button class = "plusMinus" onClick = {plus}>+</button>
+                        <button className = "plusMinus" onClick = {plus}>+</button>
                         </div>
                         <div id = "totalPrice">총 주문금액 : {totalPrice}</div>
                     </div>

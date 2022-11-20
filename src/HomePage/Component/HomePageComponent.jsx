@@ -78,11 +78,11 @@ const HomePageComponent = ({cartList}) =>{
                 spaceBetween={20}
                 className="mySwiper"
             >
-            <SwiperSlide><button class = "category-choose">대표메뉴</button></SwiperSlide>
-            <SwiperSlide><button class = "category-choose">세트메뉴</button></SwiperSlide>
-            <SwiperSlide><button class = "category-choose">음료수</button></SwiperSlide>
-            <SwiperSlide><button class = "category-choose">디저트</button></SwiperSlide>
-            <SwiperSlide><button class = "category-choose">뭐넣지</button></SwiperSlide>
+            <SwiperSlide><button className = "category-choose">대표메뉴</button></SwiperSlide>
+            <SwiperSlide><button className = "category-choose">세트메뉴</button></SwiperSlide>
+            <SwiperSlide><button className = "category-choose">음료수</button></SwiperSlide>
+            <SwiperSlide><button className = "category-choose">디저트</button></SwiperSlide>
+            <SwiperSlide><button className = "category-choose">뭐넣지</button></SwiperSlide>
             </Swiper>
             </div>
 
@@ -95,22 +95,22 @@ const HomePageComponent = ({cartList}) =>{
                 className="mySwiper"
                 >
             <SwiperSlide className = "topMenu">
-            <div class = "food-image-container">
-                <img src ={Image.salmon} class = "food-menu"/>
+            <div className = "food-image-container">
+                <img src ={Image.salmon} className = "food-menu"/>
             </div>
                 <div>연어</div>
                 <div>15000원</div>
                 </SwiperSlide>
             <SwiperSlide className = "topMenu">
-                <div class = "food-image-container">
-                    <img src ={Image.hamburger} class = "food-menu"/>
+                <div className = "food-image-container">
+                    <img src ={Image.hamburger} className = "food-menu"/>
                 </div>
                 <div>햄버거</div>
                 <div>5000원</div>
             </SwiperSlide>
             <SwiperSlide className = "topMenu">
-                <div class = "food-image-container">
-                    <img src ={Image.hamburger} class = "food-menu"/>
+                <div className = "food-image-container">
+                    <img src ={Image.hamburger} className = "food-menu"/>
                 </div>
                 <div>햄버거</div>
                 <div>5000원</div>
@@ -128,22 +128,22 @@ const HomePageComponent = ({cartList}) =>{
                 className="mySwiper"
                 >
             <SwiperSlide className = "topMenu">
-            <div class = "food-image-container">
-                <img src ={Image.salmon} class = "food-menu"/>
+            <div className = "food-image-container">
+                <img src ={Image.salmon} className = "food-menu"/>
             </div>
                 <div>연어</div>
                 <div>15000원</div>
                 </SwiperSlide>
             <SwiperSlide className = "topMenu">
-                <div class = "food-image-container">
-                    <img src ={Image.hamburger} class = "food-menu"/>
+                <div className = "food-image-container">
+                    <img src ={Image.hamburger} className = "food-menu"/>
                 </div>
                 <div>햄버거</div>
                 <div>5000원</div>
             </SwiperSlide>
             <SwiperSlide className = "topMenu">
-                <div class = "food-image-container">
-                    <img src ={Image.hamburger} class = "food-menu"/>
+                <div className = "food-image-container">
+                    <img src ={Image.hamburger} className = "food-menu"/>
                 </div>
                 <div>햄버거</div>
                 <div>5000원</div>
@@ -158,8 +158,8 @@ const HomePageComponent = ({cartList}) =>{
                 return <Link to = {`/cart/${menu.id}`} key={index} id = "menu-container" >
                     <img src = {menu.menuImage} id = "menu-image"/>
                     <div id = "menuContent">
-                    <div class = "menu-title">{menu.title}</div>
-                    <div class = "menu-price">{menu.price}</div>
+                    <div className = "menu-title">{menu.title}</div>
+                    <div className = "menu-price">{menu.price}</div>
                     </div>
                     </Link>
             })}
