@@ -11,6 +11,8 @@ import "../HomePage.css"
 import Api from "../../Api.json";
 import {Link} from "react-router-dom";
 import StickyBox from "react-sticky-box";
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 const Image = {
     cart : require('../../ImageSource/cart.png'),
@@ -37,14 +39,17 @@ const HomePageComponent = ({cartList}) =>{
         payCheck();
     }, [])
 
+    const [Cart, setCart] = useState(true);
 
     const [pay, setPay] = useState(true)
     const payCheck = () =>{
         if(cartList.length === 0){
             setPay(true);
+            setCart(true);
         }
         else{
             setPay(false);
+            setCart(false);
         }
     }
 
@@ -163,6 +168,16 @@ const HomePageComponent = ({cartList}) =>{
                     </div>
                     </Link>
             })}
+            {Cart ?  '': 
+                    <StickyBox offsetTop={20} offsetBottom={20} bottom>
+                    <div id = "cartAlert">
+                    <Stack sx={{ width: '100%' }} spacing={2}>
+                        <Alert variant="outlined" severity="success">
+                            장바구니에 {cartList.length}개 상품이 담겼습니다.
+                        </Alert>
+                    </Stack>
+                    </div>
+                    </StickyBox>}
             {pay ? '' : <StickyBox offsetTop={20} offsetBottom={20} bottom>
                 <Link to = {`/pay`}>
                     <button id = "creditButton">결제하기</button>

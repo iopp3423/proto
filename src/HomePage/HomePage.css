@@ -95,6 +95,7 @@
 .category-choose{
     background-color: white;
     border : 0px;
+    color : black;
 }
   #topMenuChoiceContainer{
     height : 100%;
@@ -230,9 +231,33 @@
     width : 30px;
     height : 30px;
   }
+  .plusButton{
+    background-color: white;
+    border: 0px;
+    border-right: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .minusButton{
+    background-color: white;
+    border: 0px;
+    border-left: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
   #quantityText{
     width : 30px;
-    height : 28px;
+    height : 30px;
     text-align: center;
     font-size:20px;
     border : 1px solid rgb(201, 201, 201);
@@ -240,19 +265,18 @@
     border-left:0px;
   }
 
-  .css-f779bt-MuiStack-root{
+  #cartAlert{
     animation: fadeout 5s;
   }
-  @keyframes fadeout {
-      from {
-        opacity: 1;
-        transition-delay : 1s;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  }
 #pay-top-container{
   width : 100%;
   height : 80px;
@@ -347,6 +371,7 @@
   height: 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  color: black;
 }
 .payMinus{
   background-color: white;
@@ -359,6 +384,7 @@
   font-size: 20px;
   width: 30px;
   height: 30px;
+  color: black;
 }
 #payQuantityText{
   width: 30px;

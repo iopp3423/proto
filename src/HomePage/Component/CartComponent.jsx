@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react";
 import Api from "../../Api.json";
 import {Link} from "react-router-dom";
 import { useParams } from 'react-router-dom';
-import Alert from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
 import {addFood} from "../../Store";
 import {useDispatch} from 'react-redux';
 
@@ -13,6 +11,7 @@ const Image = {
     salmon : require('../../ImageSource/salmon.jpg'),
     hamburger : require('../../ImageSource/hamburger.jpg'),
     back : require('../../ImageSource/back.png'),
+    review : require('../../ImageSource/review.jpg'),
 }
 
 const styles = {
@@ -77,9 +76,9 @@ const Cart = () =>{
                     <div id = "priceContainer">
                         <div id = "price">가격 : {Api[params.id].price}원</div>
                         <div id = "quantity">수량 :&nbsp;
-                        <button className = "plusMinus" onClick = {minus}>-</button>
+                        <button className = "minusButton" onClick = {minus}>-</button>
                         <div id = "quantityText">{quantity}</div>
-                        <button className = "plusMinus" onClick = {plus}>+</button>
+                        <button className = "plusButton" onClick = {plus}>+</button>
                         </div>
                         <div id = "totalPrice">총 주문금액 : {totalPrice}</div>
                     </div>
@@ -87,15 +86,7 @@ const Cart = () =>{
                     <Link to = {`/`}>
                     <button id = "cartButton" onClick = {getCart}>장바구니 담기</button>
                     </Link>
-                    {Cart ?  '': 
-                    <div id = "cartAlert">
-                    <Stack sx={{ width: '100%' }} spacing={2}>
-                        <Alert variant="outlined" severity="success">
-                            장바구니에 담겼습니다.
-                        </Alert>
-                    </Stack>
-                    </div>}
-
+                    <img src = {Image.review} style = {{width : "100%", height : "400px", marginTop : "40px"}}/>
                     </div>
                 </div>
             </div>

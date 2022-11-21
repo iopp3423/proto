@@ -26,7 +26,7 @@ function Pay({cartList}){
 
     const costCaculate = () =>{
         cartList.map((list, index)=>{
-            totalOrderCost += parseInt(list.price);
+            totalOrderCost += parseInt(list.price * list.quantity);
         })
         setOrderCost(totalOrderCost);
         totalOrderCost = 0;
@@ -58,7 +58,7 @@ function Pay({cartList}){
                     {cartList.map((list)=>{
                         return <div id = "orderListBottomContainer">
                             <div>{list.title} {list.quantity}개</div>
-                            <div>{list.price}</div>
+                            <div>{list.price * list.quantity}</div>
                             </div>
                     })}
                 <div id = "orderBottomCost">
