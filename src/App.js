@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage/HomePage.jsx"
 import Cart from "./HomePage/Component/CartComponent.jsx";
 import Pay from "./HomePage/Component/PayComponent.jsx"

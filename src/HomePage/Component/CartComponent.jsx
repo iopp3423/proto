@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import {addFood} from "../../Store";
 import {useDispatch} from 'react-redux';
 
+
 const Image = {
     cart : require('../../ImageSource/cart.png'),
     banner : require('../../ImageSource/banner.jpg'),
