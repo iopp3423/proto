@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Store from "./Store"
-import {BrowserRouter} from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import {Provider} from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store = {Store}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 reportWebVitals();
